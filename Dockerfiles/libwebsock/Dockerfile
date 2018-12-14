@@ -11,3 +11,13 @@ RUN CFLAGS="-lpthread -levent" ./configure
 RUN make
 RUN make install
 RUN ldconfig
+
+
+FROM gcc-cmake:8-3.13.1
+
+COPY --from=build_libwebsock /usr/local/include/websock/ /usr/local/include/websock/
+# I'd like to copy only libwebsock's .so and .a files, but
+# Docker doesn't copy symlinks - copies the entire .so three times.
+# Instead, copy the entire lib/ directory
+COPY --from=build_libwebsock /usr/local/lib/ /usr/local/lib/
+RUN ldconfig
