@@ -16,8 +16,11 @@ This example should probably only have a single LED.
       * success
   * turn led on
     * fail
-    * success
+      * success
     * fail if not initilized?
+  * destroy led
+    * fail
+      * success
   * uninit
     * doesn't apply to embedded hw but will for Linux-based stuff
     * applies to socket demo

@@ -15,6 +15,12 @@ bool led_on(void)
     return true;
 }
 
+bool led_destroy(void)
+{
+    gpio_state = GPIO_LOW;
+    return true;
+}
+
 GPIO_STATE gpio_spy_get_state(void)
 {
     return gpio_state;

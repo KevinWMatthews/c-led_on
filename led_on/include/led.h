@@ -5,5 +5,6 @@
 
 bool led_create(void);
 bool led_on(void);
+bool led_destroy(void);
 
 #endif
