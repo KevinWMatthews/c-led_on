@@ -13,5 +13,5 @@ bool led_on(void)
 
 GPIO_STATE gpio_spy_get_state(void)
 {
-    return GPIO_HIGH;
+    return GPIO_LOW;
 }

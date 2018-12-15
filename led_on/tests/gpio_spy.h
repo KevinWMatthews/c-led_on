@@ -3,6 +3,7 @@
 
 typedef enum
 {
+    GPIO_LOW    = 0,
     GPIO_HIGH   = 1,
 } GPIO_STATE;
 GPIO_STATE gpio_spy_get_state(void);
