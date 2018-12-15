@@ -9,4 +9,7 @@ target_include_directories(led
     PUBLIC
         "${CMAKE_HOME_DIRECTORY}/include/"
 )
+target_compile_options(led
+    PRIVATE "-Wall"
+)
 add_library(led::led ALIAS led)

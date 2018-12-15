@@ -21,6 +21,12 @@ bool gpio_set_state(GPIO_STATE new_state)
     return true;
 }
 
+bool gpio_uninit(void)
+{
+    gpio_state = GPIO_LOW;
+    return true;
+}
+
 bool led_on(void)
 {
     gpio_state = GPIO_HIGH;

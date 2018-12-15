@@ -24,8 +24,8 @@ TEST(led_on, turn_led_on)
 
 TEST(led_on, led_off_after_destroy)
 {
-    led_create();
-    led_on();
-    CHECK_TRUE( led_destroy() );
+    led_create2();
+    led_on2();
+    CHECK_TRUE( led_destroy2() );
     LONGS_EQUAL( GPIO_LOW, gpio_spy_get_state() );
 }
