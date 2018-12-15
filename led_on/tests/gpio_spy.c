@@ -3,7 +3,7 @@
 
 static GPIO_STATE gpio_state;
 
-bool gpio_output_init(GPIO_STATE initial_state)
+bool gpio_create_output(GPIO_STATE initial_state)
 {
     gpio_state = GPIO_LOW;
     return true;
@@ -15,7 +15,7 @@ bool gpio_set_state(GPIO_STATE new_state)
     return true;
 }
 
-bool gpio_uninit(void)
+bool gpio_destroy(void)
 {
     gpio_state = GPIO_LOW;
     return true;

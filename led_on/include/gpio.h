@@ -8,8 +8,8 @@ typedef enum
     GPIO_LOW    = 0,
     GPIO_HIGH   = 1,
 } GPIO_STATE;
-bool gpio_output_init(GPIO_STATE initial_state);
+bool gpio_create_output(GPIO_STATE initial_state);
 bool gpio_set_state(GPIO_STATE new_state);
-bool gpio_uninit(void);
+bool gpio_destroy(void);
 
 #endif

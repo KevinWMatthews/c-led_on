@@ -3,7 +3,7 @@
 
 bool led_create(void)
 {
-    return gpio_output_init(GPIO_LOW);
+    return gpio_create_output(GPIO_LOW);
 }
 
 bool led_on(void)
@@ -13,5 +13,5 @@ bool led_on(void)
 
 bool led_destroy(void)
 {
-    return gpio_uninit();
+    return gpio_destroy();
 }
