@@ -2,6 +2,7 @@ enable_language(C)
 add_library(led
     "${CMAKE_HOME_DIRECTORY}/include/led.h"
     led.c
+    gpio.c
 )
 #led.c
 target_include_directories(led

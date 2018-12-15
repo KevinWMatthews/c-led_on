@@ -1,11 +1,7 @@
-#ifndef GPIO_H_INCLUDED
-#define GPIO_H_INCLUDED
+#ifndef GPIO_SPY_H_INCLUDED
+#define GPIO_SPY_H_INCLUDED
 
-typedef enum
-{
-    GPIO_LOW    = 0,
-    GPIO_HIGH   = 1,
-} GPIO_STATE;
+#include "gpio.h"
 GPIO_STATE gpio_spy_get_state(void);
 
 #endif

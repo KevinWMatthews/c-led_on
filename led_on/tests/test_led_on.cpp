@@ -11,7 +11,7 @@ TEST_GROUP(led_on)
 
 TEST(led_on, led_off_after_create)
 {
-    CHECK_TRUE( led_create() );
+    CHECK_TRUE( led_create2() );
     LONGS_EQUAL( GPIO_LOW, gpio_spy_get_state() );
 }
 
