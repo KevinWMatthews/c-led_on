@@ -16,3 +16,10 @@ container $ cmake ../led_on/ -DCOMPILE_UNIT_TESTS=ON
 container $ make
 container $ ./bin/test_led_on
 ```
+
+How to figure out what options are available?
+```bash
+container $ ccmake ../led_on
+```
+
+Can also use cmake-gui, but this requires pipeing the display outout.
