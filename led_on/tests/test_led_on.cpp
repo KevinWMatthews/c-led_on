@@ -19,5 +19,5 @@ TEST(led_on, led_off_after_create)
 TEST(led_on, turn_led_on)
 {
     CHECK_TRUE( led_on() );
-    // LONGS_EQUAL( GPIO_HIGH, gpio_spy_get_state() );
+    LONGS_EQUAL( GPIO_HIGH, gpio_spy_get_state() );
 }

@@ -11,6 +11,7 @@ bool led_create(void)
 
 bool led_on(void)
 {
+    gpio_state = GPIO_HIGH;
     return true;
 }
 
