@@ -15,6 +15,12 @@ bool gpio_output_init(GPIO_STATE initial_state)
     return true;
 }
 
+bool gpio_set_state(GPIO_STATE new_state)
+{
+    gpio_state = new_state;
+    return true;
+}
+
 bool led_on(void)
 {
     gpio_state = GPIO_HIGH;
