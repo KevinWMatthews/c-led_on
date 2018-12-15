@@ -4,5 +4,6 @@
 #include <stdbool.h>
 
 bool led_create(void);
+bool led_on(void);
 
 #endif
