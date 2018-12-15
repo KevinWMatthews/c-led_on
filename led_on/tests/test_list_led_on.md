@@ -8,12 +8,16 @@ Assume a single LED? Makes it harder to upgrade but easier to grok for this
 example.
 This example should probably only have a single LED.
 
-  * initialize led
+  * initialize led subsystem
     * fail
     * success
+  * create led
+    * fail
+      * success
   * turn led on
     * fail
     * success
+    * fail if not initilized?
   * uninit
     * doesn't apply to embedded hw but will for Linux-based stuff
     * applies to socket demo
